@@ -1,0 +1,21 @@
+Sign Up
+
+<%= form_for @stylist do |f| %>
+  <div>
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+  </div>
+  <div>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+  <div>
+ <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+#confirm password
+  <%= f.submit "Sign Up" %>
+<% end %>
+
+#render a page that has them fill out the rest of their profile
+#stated this in redirect_to page
