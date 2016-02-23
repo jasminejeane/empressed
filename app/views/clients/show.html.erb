@@ -1,0 +1,32 @@
+<div>
+  Welcome, <%= @client.first_name %> 
+</div>
+
+#This would be the page with the new input form
+#how would I link this info.. would I make a new create controller or add the info the the already made create folder 
+
+<%= form_for @client do |f| %>
+  <div>
+    <%= f.text_field :speciality, placeholder: "Speciality i.e color" %>
+#icebox
+#how to make this when they start typing options come up
+  </div>
+  <div>
+    <%= f.text_field :salon, placeholder: "Salon" %>
+  </div>
+  <div>
+    <%= f.text_field :school, placeholder: "School" %>
+  </div>
+ <div>
+    <%= f.text_field :bio, placeholder: "Brief Description " %>
+  </div>
+  <div>
+    <%= f.text_field :headshot, placeholder: "Headshot" %>
+#how to make upload photo link
+  </div>
+<div>
+ <%= f.text_field :license, placeholder: "Upload license" %>
+  </div>
+#confirm password
+  <%= f.submit "Submit" %>
+<% end %>
