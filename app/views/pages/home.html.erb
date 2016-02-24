@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+    <!-- how to link my image.. having trouble -->
+    <%= image_tag("img1.jpg", class: "testImgP") %>
+
+      <!-- this caption goes on the picture -->
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+          <!-- #imbedded vide -->
+      </div>
+    </div>
+    <div class="item">
+
+
+     <%= image_tag("img2.jpg", class: "testImgP") %>
+
+
+      <div class="carousel-caption">
+          <h3>About Us</h3>
+          <h3 class="aboutText">Testing to see if this works Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aspernatur laboriosam aperiam sapiente molestias tempora vitae natus sequi perspiciatis minus iure, doloremque fuga. In repellendus expedita, et nostrum! Atque, qui!
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus esse eos architecto dolore nisi quo quidem consequuntur eveniet id, nesciunt optio harum necessitatibus alias quaerat inventore vitae. Porro, quos, eum.
+
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus esse eos architecto dolore nisi quo quidem consequuntur eveniet id, nesciunt optio harum necessitatibus alias quaerat inventore vitae. Porro, quos, eum.</h3>
+          <!-- parralax image 1 -->
+      </div>
+    </div>
+    <div class="item">
+
+          <%= image_tag("img3.jpg", class: "testImgP") %>
+
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- parralax image 2 -->
+
+  <!-- Skills boxes -->
+
+  <div class="boxContain">
+
+ <div class="box"></div>
+
+  <div class="box"></div>
+
+ <div class="box"></div>
+
+</div>
+
+  <div class="boxContain">
+
+ <div class="box"></div>
+
+  <div class="box"></div>
+
+ <div class="box"></div>
+
+</div>
+
+<!-- contact us form -->
+  <div>
+     <form id="contact-form" method="POST" action="processForm.php" name="ContactForm">
+    <h2>
+      Drop us a line!
+    </h2>
+    <p class="intro cform">
+      What do you like about our products? What products do you want in the future? Contact us and let us know!
+    </p> 
+
+      <p class="inputfield cform"><label for="subject">Subject</label></p> 
+                <input type="text" id="name" name="name" placeholder="What's this about?" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="1" /> 
+    
+        <p class="inputfield cform"><label for="message">Your Message</label></p> 
+                <textarea name="message" id="message" tabindex="2"></textarea> 
+            
+      <p class="inputfield cform"><label for="name">Name</label></p> 
+                <input type="text" id="name" name="name" placeholder="First and last name" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="3" /> 
+                 
+        <p class="inputfield cform"><label for="email">Email</label></p> 
+                <input type="text" id="email" name="email" placeholder="yourname@domain.com" required tabindex="4" />
+                
+        <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
+     </form>
+  
+ 
+  </div>
+  
+

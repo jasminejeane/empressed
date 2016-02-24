@@ -2,13 +2,42 @@
 <html>
 <head>
   <title>EmpressedApp</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<ul>
+  <li><%= link_to "HOME", root_path %></li>
+  
+ 
+  <li><a href="#skills">ABOUT US</a></li>
+  <li><%= link_to "STYLIST", stylists_path %></li>
+
+   <li><a href="#skills">SKILLS</a></li>
+ 
+  <% if !current_user %>
+    <li><a href="#login">LOGIN</a></li>
+  <% else %>
+    <li><a href="#logout">LOGOUT</a></li>
+  <% end %> 
+  
+<li><a href="#location">LOCATION</a></li>
+
+  <li><a href="#contact">CONTACT US</a></li>
+ </ul>
+   
+
 
 <%= yield %>
+
+
+
+ <footer>
+            <p class="footer cform">Copyrighted 2016. All rights reserved in Empressed.</a></p>
+    </footer>
+
 
 </body>
 </html>
