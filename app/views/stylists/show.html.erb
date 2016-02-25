@@ -21,8 +21,8 @@ touch app/views/stylists/show.html.erb
 
  <h2 class= "creditsh2">Credentials</h2>
 
-  <p class ="creditsP"> Salon: Hiroshi Beverly Hills</p>
-  <p class ="school creditsP"> School: Paul Mitchell</p>
+  <p class ="creditsP"> Salon: <%= @stylist.salon %></p>
+  <p class ="school creditsP"> School: <%= @stylist.school %></p>
 
   <div class = "bookMe">
 
@@ -45,23 +45,23 @@ touch app/views/stylists/show.html.erb
 
  </div>
 
-<h3>Specialty: Colorists </h3>
+<h3>Specialty: <%= @stylist.speciality %></h3>
 
 <div class ="bioContain">
 
 <h2>About Me</h2>
 
 <p>
-  
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, modi dolor deserunt aspernatur cum neque molestiae, eos officiis impedit possimus? Deleniti non laborum, eos aliquam impedit? Nemo doloremque, molestiae.
-</p>
-  
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus modi inventore impedit vero porro pariatur ut illum quisquam consequatur, in dicta adipisci aliquam velit cupiditate quibusdam commodi rem corporis.
-</p>
 
-<p>
+
+
+<%= @stylist.bio %>
+  
+ <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quae, modi dolor deserunt aspernatur cum neque molestiae, eos officiis impedit possimus? Deleniti non laborum, eos aliquam impedit? Nemo doloremque, molestiae.
+
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus modi inventore impedit vero porro pariatur ut illum quisquam consequatur, in dicta adipisci aliquam velit cupiditate quibusdam commodi rem corporis.
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus modi inventore impedit vero porro pariatur ut illum quisquam consequatur, in dicta adipisci aliquam velit cupiditate quibusdam commodi rem corporis. -->
 </p>
 
 
@@ -101,9 +101,7 @@ touch app/views/stylists/show.html.erb
 
 <p>Going to make this a moc show page until I get that figured out</p>
 <p>This is the stylist index page</p>
-<div>
-There are currently <%= @stylists.length %> signed_up
-</div>
+
 
 
 

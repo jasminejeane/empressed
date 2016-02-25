@@ -35,9 +35,34 @@ def create
     render :edit
   end
 
+  def update
+    # authorization check
+    if current_user.id == params[:id].to_i
+      # allow update
+      current_user.update_attributes(stylist_params)
+      redirect_to current_user
+    else
+      # drop them back on the edit page
+      redirect_to edit_stylist_path(current_user)
+    end
+    # pull out params
+    # find the stylist (current_user)
+    # .update_attributes
+
+    # redirect_to "/stylists/#{@stylist.id}"
+
+
+
+    # <%= @stylist.school %>
+  end
+
 def show
     @stylist = Stylist.find(params[:id])
     render :show
+  end
+
+  def stylist_params
+    params.require(:stylist).permit(:speciality, :salon, :school, :bio, :headshot, :license)
   end
 
 end

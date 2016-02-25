@@ -18,21 +18,24 @@
    <li><a href="#skills">SKILLS</a></li>
  
   <% if !current_user %>
-    <li><a href="#login">LOGIN</a></li>
-  <% else %>
-    <li><a href="#logout">LOGOUT</a></li>
+      <li><%= link_to "LOGIN", new_session_path%></li>
+
+<!--     <li><a href="#login">LOGIN</a></li>
+ -->  <% else %>
+    <li><%= link_to "LOGOUT", logout_path, method: :delete %></li>
   <% end %> 
   
-<li><a href="#location">LOCATION</a></li>
+  <li><%= link_to "LOCATION", location_path%></li>
+
 
   <li><a href="#contact">CONTACT US</a></li>
  </ul>
    
-
+<div id= "container">
 
 <%= yield %>
 
-
+</div>
 
  <footer>
             <p class="footer cform">Copyrighted 2016. All rights reserved in Empressed.</a></p>

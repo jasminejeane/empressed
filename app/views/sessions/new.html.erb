@@ -1,1 +1,17 @@
 <h1>This is the Sessions New Page </h1>
+
+Sign In
+
+<%= form_for @stylist, url: "/sessions", method: "post" do |f| %>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+  <div>
+    <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+  <%= f.submit "Sign In" %>
+<% end %> 
+
+
+<p>Not Registered?</p>
+<%= link_to "Sign Up", client_stylist_path %>

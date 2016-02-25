@@ -1,8 +1,13 @@
 module SessionHelper
 
   def login(user)
-    session[:user_id] = user.id
-    @current_user = user
+    if user.class.name == 'Stylist'
+      session[:user_id] = user.id
+      current_user = Stylist.find_by(id:user.id)
+    else
+      session[:user_id] = user.id
+      current_user = Client.find_by(id:user.id)
+    end
   end
 
   def current_user
