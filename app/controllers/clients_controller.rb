@@ -53,8 +53,9 @@ def show
     render :show
   end
 
-def stylist_params
-    params.require(:stylist).permit(:speciality, :salon, :school, :bio, :headshot, :license)
-  end
+def client_params
+  params.require(:client).permit(:headshot, :phone, :bio, :hair_goal, :last_salon_visit, 
+    :service, :allergies, :referred_by, :favorite_products, :birthday, :hobbies)
+    end
 
 end
