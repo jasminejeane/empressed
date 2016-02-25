@@ -10,15 +10,13 @@ def new
     render :new
   end
 def create
-  binding.pry
     client_params = params.require(:client).permit(:first_name, :last_name, :email, :password)
      @client = Client.new(client_params)
     if @client.save
       login(@client)
-      binding.pry
+      
       redirect_to edit_client_path(@client)
     else
-      binding.pry
       render :show
     end
 #actually want the above page to redirect to another form welcome page 
@@ -49,7 +47,7 @@ def update
     # <%= @stylist.school %>
   end
 def show
-    @client = client.find(params[:id])
+    @client = Client.find(params[:id])
     render :show
   end
 

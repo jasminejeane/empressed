@@ -11,7 +11,8 @@ module SessionHelper
   end
 
   def current_user
-    @current_user ||= session[:user_id] && Stylist.find(session[:user_id])
+    binding.pry
+    @current_user ||= Client.find_by(id:session[:user_id]) || Stylist.find_by(session[:user_id])
   end
 
   def logged_in?
@@ -21,7 +22,9 @@ module SessionHelper
   end
 
   def logout
+    binding.pry
     @current_user = session[:user_id] = nil
+    binding.pry
   end
 
 end
