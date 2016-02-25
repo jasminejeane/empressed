@@ -61,6 +61,9 @@ def show
     render :show
   end
 
+  
+private
+
   def stylist_params
     params.require(:stylist).permit(:speciality, :salon, :school, :bio, :headshot, :license)
   end

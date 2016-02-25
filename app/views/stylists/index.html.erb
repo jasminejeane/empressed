@@ -1,6 +1,31 @@
-<h1>Rock 'n Rails!</h1>
-<% @records.each do |record| %>
-  <p>Title: <%= record.title %></p>
-  <p>Artist: <%= record.artist %></p>
-  <img src="<%= record.cover_art %>">
+
+<h1>Stylists</h1>
+
+<div class ="flex">
+
+
+
+
+
+
+<% @stylists.each do |stylist| %>
+
+<div class = "allContain">
+
+     <%= image_tag(stylist.headshot,class: "indexPic")  %>
+
+
+  <p>Artist: <%= stylist.first_name %></p>
+  <p>School: <%= stylist.school %></p>
+  <p>Salon: <%= stylist.salon %></p>
+
+
+</div>
 <% end %>
+
+</div>
+
+
+
+
+    

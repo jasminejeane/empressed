@@ -12,6 +12,38 @@ body {
 }
 
 
+/*STYLIST INDEX PAGE*/
+
+.flex {
+
+  display: flex;
+}
+
+
+.allContain {
+  margin: 5px;
+  padding: 20px;
+
+  border: 2px solid white;
+  width: 40%;
+}
+
+/*.allContainTwo {
+display: flex;
+
+flex-direction: column;
+}*/
+
+.indexPic {
+
+  width: 200px;
+  height: 150px;
+
+}
+
+/*LAYOUT */
+
+
 
 #container {
   padding-top: 100px;
@@ -19,7 +51,7 @@ body {
   margin-left: 50px;
 }
 
-
+/*STYLIST SHOW PAGE*/
 
 .headShotContain {
  display: flex;
