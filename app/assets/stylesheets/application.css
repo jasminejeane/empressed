@@ -41,9 +41,9 @@ body {
 
 
 #container {
-  padding-top: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
+  padding-top: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /*STYLIST SHOW PAGE*/
@@ -216,10 +216,10 @@ h2 {
 /*Contact Form*/
 #contact-form {
     width: 400px;
-  background-color: #ffffff;
+    background-color: #ffffff;
     margin: 0px auto;
-  padding: 40px 40px 35px 40px;
-  border-radius: 0 0 3px 3px;
+    padding: 40px 40px 35px 40px;
+    border-radius: 0 0 3px 3px;
     -moz-border-radius: 0 0 5px 5px;
 }
 
