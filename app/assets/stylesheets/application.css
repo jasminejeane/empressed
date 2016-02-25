@@ -23,16 +23,11 @@ body {
 .allContain {
   margin: 5px;
   padding: 20px;
-
   border: 2px solid white;
   width: 40%;
 }
 
-/*.allContainTwo {
-display: flex;
 
-flex-direction: column;
-}*/
 
 .indexPic {
 
@@ -89,6 +84,7 @@ flex-direction: column;
 
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .bioContain {
@@ -143,8 +139,8 @@ ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-/*    background-color: #333;
-*/    position: fixed;
+/*    background-color: #333;*/    
+    position: fixed;
     top: 0;
     width: 100%;
 
@@ -173,23 +169,14 @@ li a:hover:not(.active) {
 }
 
 .active {
-/*    background-color: #4CAF50;
-*/}
+/*    background-color: #4CAF50; */
+}
 
 
 
 
+/*NOT SURE WHAT THIS IS LINKED TO*/
 
-/*contact css*/
-
-
-
-
-/* basic css */
-
-
-
-/*everything in the CONTACT form is a p tag*/
 
 .cform { 
     color: #5DACCA; 
