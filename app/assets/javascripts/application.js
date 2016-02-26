@@ -27,15 +27,19 @@ $waypoint.scroll(function(){
 
    var top = $(window).scrollTop();
 
-                    if (top > 300) {
-                        console.log("Yooo");
-                    }
-                    else if (top > 600) {
-$( ".box-contain" ).effect( "shake" );                    } 
-                    else {
-$( ".box-contain" ).effect( "shake" );                    }   
+      if (top < 300) {
+          console.log("Yooo");
+      }
+      else if (top > 600) {
+        console.log("we are at 600");
+        $( ".boxEx" ).animate({ opacity: 0.80,
+    left: "+=50",
+    height: 'toggle'
+  }, 5000, function() {
+    // Animation complete.
+  });
 
-
+}
 });
 
 
