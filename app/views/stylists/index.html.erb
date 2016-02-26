@@ -15,11 +15,12 @@
 
      <%= image_tag(stylist.headshot,class: "indexPic")  %>
 
+<div class ="right">
+  <p class="sIndex">Artist: <%= link_to stylist.first_name, stylist_path(stylist) %></p>
+  <p class="sIndex">School: <%= stylist.school %></p>
+  <p class="sIndex">Salon: <%= stylist.salon %></p>
 
-  <p>Artist: <%= link_to stylist.first_name, stylist_path(stylist) %></p>
-  <p>School: <%= stylist.school %></p>
-  <p>Salon: <%= stylist.salon %></p>
-
+</div>
 
 </div>
 <% end %>
