@@ -55,6 +55,9 @@ A few more things needing to be changed
 
 ## ShoutOuts
 
+LESLIE!!!! - Thsnk you so much for tsking the time to break down the basics of Rails.
+I told you this already but it was worth its weight in gold.
+
 Vien-for sending me music while I work which inspired my theme
 
 Of course Illias for guiding me through the process
