@@ -1,7 +1,7 @@
 # Book Me Empressed
 
 
-## Unit 2: Full-stack Ruby on Rails
+## Project 2: Rails App
 
 #### Week 5
 
