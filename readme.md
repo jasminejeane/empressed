@@ -7,7 +7,7 @@
 
 ## Description
 
-This is an app that is meant to connect clinets and Stylist.
+This is an app that is meant to connect clients and Stylist.
 As a hairstylist or any freelance job, building clientle is one of 
 the most important things. 
 
