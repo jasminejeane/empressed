@@ -148,6 +148,25 @@ margin-left: 409px;
   top:300px;
   left: 353px;
 }
+
+
+.homeC3 {
+
+
+    position: absolute;
+    top: 400px;
+    left: 437px;
+    /*font-size: 2`120px;*/
+
+    /*display: inline;
+    width: 328px;
+    font-size: 14px;
+    background-color:#5DACCA;;
+    color: #fff;
+    padding: 5px 0px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 26px;*/
+}
 /*PARRALAX CSS*/
 
 #home { 
@@ -416,15 +435,15 @@ input[type="text"] {
 }
 
 input[type="submit"]{
-    display: inline;
-    width: 787px;
-  font-size: 14px;
-    background-color:#5DACCA;;
+   display: inline;
+    width: 328px;
+    height: 63px;
+    font-size: 14px;
+    background-color: #5DACCA;
     color: #fff;
     padding: 5px 0px;
     margin: 10px 0px 0px 0px;
-    border-radius: 3px;
-    -moz-border-radius: 5px;
+    border-radius: 26px;
 }
 
 input[type="submit"]:hover {
