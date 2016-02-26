@@ -1,17 +1,21 @@
-<h1>This is the Sessions New Page </h1>
+<h1></h1>
 
-Sign In
+<h1>Sign In</h1>
 
 <%= form_tag sessions_path, method: "post" do %>
   <div>
-    <%= email_field_tag :email, nil, placeholder: "Email" %>
+    <%= email_field_tag :email, nil, placeholder: "Email", class: "sEmail" %>
   </div>
   <div>
-    <%= password_field_tag :password, nil, placeholder: "Password" %>
+    <%= password_field_tag :password, nil, placeholder: "Password", class: "sPassword"%>
   </div>
   <%= submit_tag "Sign In" %>
 <% end %> 
 
 
-<p>Not Registered?</p>
-<%= link_to "Sign Up", client_stylist_path %>
+<h2 class = "notR">Not Registered?</h2>
+
+<div class ="signUp">
+<%= link_to "SIGN UP", client_stylist_path  %>
+
+</div>

@@ -17,4 +17,25 @@
 //= require_tree .
 
 
+    console.log( "ready!" );
+
 console.log("I am working");
+
+var $waypoint = $(window);
+
+$waypoint.scroll(function(){
+
+   var top = $(window).scrollTop();
+
+                    if (top > 300) {
+                        console.log("Yooo");
+                    }
+                    else if (top > 600) {
+$( ".box-contain" ).effect( "shake" );                    } 
+                    else {
+$( ".box-contain" ).effect( "shake" );                    }   
+
+
+});
+
+

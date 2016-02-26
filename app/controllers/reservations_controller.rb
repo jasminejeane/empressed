@@ -12,7 +12,6 @@ def new
   end
 
 def create
-   binding.pry
     #i don't think this isn't going to matter
     @reservation = Reservation.create(client_id:current_user.id, stylist_id:params[:id])
 
