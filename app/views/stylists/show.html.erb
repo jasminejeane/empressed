@@ -1,8 +1,4 @@
-#VIEW- SHOW 
-touch app/views/stylists/show.html.erb
-<!-- messed up when refreshed -->
 
-<h1>Stylist SHOW page</h1>
 
 
 
@@ -11,11 +7,11 @@ touch app/views/stylists/show.html.erb
 
 <div id= "container">
 
-<h1>Stylist Name</h1>
+<h1><%= @stylist.first_name %></h1>
 
   <div class="headShotContain ">
 
- <div class="box headshot"></div>
+  <%= image_tag(@stylist.headshot,class: "box")  %>
 
  <div class= "credits">
 
@@ -72,46 +68,26 @@ touch app/views/stylists/show.html.erb
 <%= image_tag("img1.jpg", class: "galleryImg") %>
 <%= image_tag("img2.jpg", class: "galleryImg") %>
 <%= image_tag("img3.jpg", class: "galleryImg") %>
+<%= image_tag("img1.jpg", class: "galleryImg") %>
+
 
 </div>
 
 
+
+<h1>CLIENTS THAT WANT TO BOOK</h1>
+
 <% @stylist.messages.each do |message| %>
+
+<div class = "allContain">
 
 <%= message.from %>
 <%= message.body %>
 
+</div>
 <%end%>
 
 
-<p>Social media</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>Going to make this a moc show page until I get that figured out</p>
-<p>This is the stylist index page</p>
-
-
-
-
-</div>
 
 
 

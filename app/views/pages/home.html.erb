@@ -1,28 +1,10 @@
 
 
 
-
-
-
-
-
- 
-    <div class="item active">
-    <!-- how to link my image.. having trouble -->
-
-      <!-- this caption goes on the picture -->
-      <div class="carousel-caption">
-          <!-- #imbedded vide -->
-      </div>
-    </div>
-
-    
-
-    <div class="item">
-
     <div class ="video">
-
-<%= video_tag("whipmyhair.mp4", autoplay: :autoplay, autobuffer: true, width: "100%", ) %>
+<h1 id ="homeC1">"BOOK ME EMPRESSED!"</h1>
+<h1 id ="homeC2">Where hair Stylist and Clients Meet</h1>
+<%= video_tag("whipmyhair.mp4", autoplay: :autoplay, autobuffer: true, width: "100%" ) %>
 
    </div>
 
@@ -30,8 +12,8 @@
 
   <section class ="aboutUs"> 
 
-          <h3>About Us</h3>
-          <h3 class="aboutText">Testing to see if this works Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aspernatur laboriosam aperiam sapiente molestias tempora vitae natus sequi perspiciatis minus iure, doloremque fuga. In repellendus expedita, et nostrum! Atque, qui!
+          <h3 class="aboutText">
+         <span>ABOUT US</span> - if this works Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aspernatur laboriosam aperiam sapiente molestias tempora vitae natus sequi perspiciatis minus iure, doloremque fuga. In repellendus expedita, et nostrum! Atque, qui!
 
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus esse eos architecto dolore nisi quo quidem consequuntur eveniet id, nesciunt optio harum necessitatibus alias quaerat inventore vitae. Porro, quos, eum.
 
@@ -46,53 +28,68 @@
       </section>
 
 
-     <!--  <section id="home" data-type="background" data-speed="10" class="pages">     
-      <article> -->
-    
-<!-- </article>
-</section> -->
-
-
-  <!-- parralax image 2 -->
-
-  <!-- Skills boxes -->
 
   <div class="boxContain" id ="basic-waypoint">
 
- <div class="box">HAIR CUTS</div>
+ <div class="box boxEx">
+ <p class="boxP">HAIR CUTS</p>
+ </div>
 
-  <div class="box">COLOR</div>
+  <div class="box boxEx">
+ <p class="boxP">COLOR</p>
 
- <div class="box">UPDOS</div>
+
+  </div>
+
+ <div class="box boxEx">
+
+ <p class="boxP">UPDOS</p>
+
+ </div>
 
 </div>
 
   <div class="boxContain" id="basic-waypoint2">
 
- <div class="box">BRAIDS</div>
+ <div class="box boxEx">
 
-  <div class="box">EXTENSIONS</div>
+ <p class="boxP">BRAIDS</p>
 
- <div class="box">BARBERS</div>
+ </div>
+
+  <div class="box boxEx">
+
+ <p class="boxP">EXTEN SIONS</p>
+
+</div>
+
+ <div class="box boxEx">
+   
+
+    <p class="boxP">BARBERS</p>
+
+ </div>
 
 </div>
 
 <!-- contact us form -->
+
+<h1 class = "align space">Contact Us</h1>
   <div>
-     <form id="contact-form" method="POST" action="processForm.php" name="ContactForm">
+     <form id="contact-form" class ="align" method="POST" action="processForm.php" name="ContactForm">
     
    
 
-      <p class="inputfield cform"><label for="subject">Subject</label></p> 
-                <input type="text" id="name" name="name" placeholder="What's this about?" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="1" /> 
+      <p class="inputfield cform"><label for="subject"></label></p> 
+                <input type="text" id="name" name="name" placeholder="Subject" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="1" /> 
     
-        <p class="inputfield cform"><label for="message">Your Message</label></p> 
+        <p class="inputfield cform"><label for="message"></label></p> 
                 <textarea name="message" id="message" tabindex="2"></textarea> 
             
-      <p class="inputfield cform"><label for="name">Name</label></p> 
+      <p class="inputfield cform"><label for="name"></label></p> 
                 <input type="text" id="name" name="name" placeholder="First and last name" style="color: #fff;" onfocus="if (this.value == '90') {this.value=''; this.style.color='#000';}" required tabindex="3" /> 
                  
-        <p class="inputfield cform"><label for="email">Email</label></p> 
+        <p class="inputfield cform"><label for="email"></label></p> 
                 <input type="text" id="email" name="email" placeholder="yourname@domain.com" required tabindex="4" />
                 
         <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />

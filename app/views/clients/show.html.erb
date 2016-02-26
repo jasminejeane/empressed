@@ -1,6 +1,5 @@
 
 
-<h1>Clients SHOW page</h1>
 
 
 
@@ -13,14 +12,14 @@
 
   <div class="headShotContain ">
 
- <div class="box headshot"></div>
+ <%= image_tag(@client.headshot,class: "box")  %>
 
  <div class= "credits">
 
  <h2 class= "creditsh2">Credentials</h2>
 
-  <p class ="creditsP"> Hair Goal: <%= @client.hair_goal %></p>
-  <p class ="school creditsP"> Last Salon Visit: <%= @client.last_salon_visit%></p>
+  <p class ="creditsP"> HAIR GOAL: <%= @client.hair_goal %></p>
+  <p class ="school creditsP"> LAST SALON VISIT <%= @client.last_salon_visit%></p>
 
   
 
@@ -28,23 +27,20 @@
 
  <div class= "skillsID">
 
- <h2 class="skillsh2">Skills</h2>
+ <h1 class="cardh2">CLIENT CARD</h1>
 
-  <p class ="skillsP"> Cut</p>
-  <p class ="skillsP"> Updos</p>
-  <p class ="skillsP">Makeup</p>
-  <p class ="skillsP">Nail Design</p>
+  <p class ="cardP"> EMAIL: <%= @client.email %></p>
+  <p class ="cardP"> PHONE: <%= @client.phone %></p>
+  <p class ="cardP">ALLERGIES: <%= @client.allergies %></p>
+  <p class ="cardP">BIRTHDAY: <%= @client.birthday %></p>
+  <p class ="cardP">REFERRED BY: <%= @client.referred_by %></p>
+
 
  </div>
 
  </div>
 
 
-<div class ="bioContain">
-
-<h2>About Me</h2>
-
-<p>
 
 
 
@@ -60,18 +56,7 @@
 
 </div>
 
-<div class="galleryContain">
 
-<h2>Portfolio</h2>
-<%= image_tag("img1.jpg", class: "galleryImg") %>
-<%= image_tag("img2.jpg", class: "galleryImg") %>
-<%= image_tag("img3.jpg", class: "galleryImg") %>
-
-</div>
-
-
-
-<p>Social media</p>
 
 
 

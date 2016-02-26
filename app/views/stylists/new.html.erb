@@ -1,7 +1,7 @@
-<h1>Stylist New Page</h1>
+<h1>Sign Up</h1>
 
 
-Sign Up
+
 
 <%= form_for @stylist do |f| %>
   <div>
@@ -15,7 +15,7 @@ Sign Up
     <%= f.text_field :email, placeholder: "Email" %>
   </div>
   <div>
- <%= f.password_field :password, placeholder: "Password" %>
+ <%= f.password_field :password, placeholder: "Password", class: "sPassword2" %>
   </div>
 <!-- #confirm password -->
   <%= f.submit "Sign Up" %>

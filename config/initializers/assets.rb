@@ -13,3 +13,5 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( whipmyhair.mp4 )
 
 Rails.application.config.assets.precompile += %w( <%= stylist.headshot %>)
+
+Rails.application.config.assets.precompile += %w( sharing-icons.png )
