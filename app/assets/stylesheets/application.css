@@ -4,45 +4,48 @@
 
 body { 
   /*THIS CAME FROM THE CONTACT FORM*/
-  background-color: #999; 
-  font-family: 'Lato';
+
+  background: url(paint1.jpg) 50% repeat;
+/* background-color: #999; 
+*/ font-family: 'Lato';
   color: #fff;
   margin: 10px;
 
 }
 
 
+.aboutUs {
+ margin: 150px;
+/* margin-right: 125px;
+ margin-left: 125px;*/
+
+ padding: 40px;
+  background-color: white;
+}
+
+.aboutText {
+
+  color: black;
+}
+
+
+.video {
+
+  padding-bottom: 50px;
+  height: 20%;
+}
 /*PARRALAX CSS*/
 
 #home { 
-  background: url(paint1.jpg) 50% 0 repeat fixed; 
-  min-height: 1000px;
+/*  background: url(white.jpg) 100% repeat fixed; 
+*//*  width: 100%;
+*/  min-height: 500px;
   margin: 0 auto; 
   /*width: 100%; 
   max-width: 1920px; 
   position: relative; */
 }
- 
-#about { 
-  background: url(img2.jpg) 50% 0 no-repeat;
-  min-height: 1000px;  
-  margin: 0 auto; 
- /* width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-}
 
-
-/* 
-#home article { 
-  height: 458px; 
-  position: absolute; 
-  text-align: center; 
-  top: 150px; 
-  width: 100%; 
-}
 
 
 
@@ -83,9 +86,9 @@ body {
 
 
 #container {
-  padding-top: 70px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-top: 50px;
+ /* margin-right: 10px;
+  margin-left: 10px;*/
 }
 
 /*STYLIST SHOW PAGE*/
@@ -127,6 +130,7 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  background-color:  transparent;
 }
 
 .bioContain {
@@ -168,10 +172,13 @@ body {
     margin: 15px;
     width: 250px;
     height: 250px;
-    background-color: lavender;
+    background-color: white;
     border: solid 1px silver;
     box-shadow: 0px 3px 5px 1px silver;
     display: inline;
+    color: black;
+    font-size: 40px;
+    text-align: center;
 }
 
 
@@ -181,8 +188,8 @@ ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-/*    background-color: #333;*/    
-    position: fixed;
+/*   background-color: #333;   
+*/    position: fixed;
     top: 0;
     width: 100%;
 
@@ -190,7 +197,7 @@ ul {
 
 
   padding: 10px;
-  background: #5DACCA;
+ background: #5DACCA;
     }
 
 
@@ -210,9 +217,7 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
-.active {
-/*    background-color: #4CAF50; */
-}
+
 
 
 
@@ -221,7 +226,7 @@ li a:hover:not(.active) {
 
 
 .cform { 
-    color: #5DACCA; 
+    color: black; 
 }
 
 
@@ -269,7 +274,7 @@ input[type="text"] {
     display: inline;
     width: 400px;
   font-size: 14px;
-    background-color:#9EcDDF;
+    background-color:#DF70A3;
   font-family: 'Lato';
   color: white;
     padding: 5px 0px 5px 10px;
@@ -292,7 +297,7 @@ input[type="submit"]{
     display: inline;
     width: 410px;
   font-size: 14px;
-    background-color:#999;
+    background-color:#DF70A3;
     color: #fff;
     padding: 5px 0px;
     margin: 10px 0px 0px 0px;
@@ -311,7 +316,7 @@ textarea {
     height: 100px;
   max-height: 300px;
   font-size: 14px;
-    background-color:#9EcDDF;
+    background: #DF70A3;
     color:#fff;
   padding: 5px 0px 5px 10px;
     margin: 5px 0px 0px 0px;

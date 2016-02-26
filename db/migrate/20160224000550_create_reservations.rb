@@ -6,5 +6,7 @@ class CreateReservations < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_foreign_key :reservations, :stylists
+    add_foreign_key :reservations, :clients
   end
 end

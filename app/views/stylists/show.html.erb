@@ -26,8 +26,7 @@ touch app/views/stylists/show.html.erb
 
   <div class = "bookMe">
 
-<a href="https://squareup.com/">BOOK ME</a>
-
+<%= link_to "BOOK ME", create_reservation_path(@stylist), method: :post %>
 </div>
 
  </div>
@@ -76,6 +75,13 @@ touch app/views/stylists/show.html.erb
 
 </div>
 
+
+<% @stylist.messages.each do |message| %>
+
+<%= message.from %>
+<%= message.body %>
+
+<%end%>
 
 
 <p>Social media</p>
