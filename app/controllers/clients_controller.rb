@@ -1,5 +1,5 @@
 class ClientsController < ApplicationController
- 
+
   def index
     @clients = Client.all
     render :index
@@ -10,16 +10,17 @@ def new
     render :new
   end
 def create
+    #OPTIMIZE: I believe you have a helper method for this at the bottom of this file
     client_params = params.require(:client).permit(:first_name, :last_name, :email, :password)
      @client = Client.new(client_params)
     if @client.save
       login(@client)
-      
+
       redirect_to edit_client_path(@client)
     else
       render :show
     end
-#actually want the above page to redirect to another form welcome page 
+#actually want the above page to redirect to another form welcome page
 #this other form will have all the other db details
   end
 
@@ -30,6 +31,7 @@ def create
 
 
 def update
+    #TODO: Nice only allowing a user to update themselves and note others!
     # authorization check
     if current_user.id == params[:id].to_i
       # allow update
@@ -52,7 +54,7 @@ def show
   end
 
 def client_params
-  params.require(:client).permit(:headshot, :phone, :bio, :hair_goal, :last_salon_visit, 
+  params.require(:client).permit(:headshot, :phone, :bio, :hair_goal, :last_salon_visit,
     :service, :allergies, :referred_by, :favorite_products, :birthday, :hobbies)
     end
 
